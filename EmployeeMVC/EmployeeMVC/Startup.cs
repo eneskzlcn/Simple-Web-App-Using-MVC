@@ -27,7 +27,7 @@ namespace EmployeeMVC
             }
 
             app.UseRouting();
-
+            app.UseStaticFiles(); //to reach static files like image files by localhost:port/image_name.png --> placing the file under wwwroot folder
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
